@@ -1,10 +1,15 @@
+using FootballLeagueFinder.Contracts;
 using FootballLeagueFinder.Data;
+using FootballLeagueFinder.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ILeagueRepository, LeagueRepository>();
+builder.Services.AddScoped<ITeamRepository, TeamRepository>();
+
 builder.Services.AddDbContext<FootballDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));

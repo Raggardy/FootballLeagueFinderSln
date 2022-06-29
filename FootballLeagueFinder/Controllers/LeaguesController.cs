@@ -1,4 +1,6 @@
-﻿using FootballLeagueFinder.Data;
+﻿using FootballLeagueFinder.Contracts;
+using FootballLeagueFinder.Data;
+using FootballLeagueFinder.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,26 +8,39 @@ namespace FootballLeagueFinder.Controllers
 {
     public class LeaguesController : Controller
     {
-        private readonly FootballDbContext _context;
+        private readonly ILeagueRepository _leagueRepository;
 
-        public LeaguesController(FootballDbContext context)
+        public LeaguesController(ILeagueRepository leagueRepository)
         {
-            _context = context;
+            _leagueRepository = leagueRepository;
         }
         public async Task<IActionResult> Index()
         {
-            var clubs = await _context.Leagues.ToListAsync();
+            var clubs = await _leagueRepository.GetAllAsync();
 
             return View(clubs);
         }
 
         public async Task<IActionResult> Detail(int id)
         {
-            var league = await _context.Leagues
-                .Include(t => t.Teams)
-                .FirstOrDefaultAsync(x => x.Id == id);
+            var league = await _leagueRepository.GetByIdAsync(id);
 
             return View(league);
+        }
+
+        public ActionResult<League> Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Create(League league)
+        {
+            if (!ModelState.IsValid) return View(league);
+
+            _leagueRepository.Add(league);
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

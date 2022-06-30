@@ -27,8 +27,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZ3Vlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Leagues/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZ3Vlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Leagues/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZ3Vlc1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Leagues/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZ3Vlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Leagues/Index.cshtml]
@@ -43,6 +51,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Shared/_LeagueDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MZWFndWVEcm9wZG93bi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -51,8 +63,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Teams/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Teams/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Teams/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dp161/Desktop/FootballLeageFinderProject/FootballLeagueFinderSln/FootballLeagueFinder/Views/Teams/Index.cshtml]

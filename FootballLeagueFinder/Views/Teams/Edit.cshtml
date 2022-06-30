@@ -1,8 +1,9 @@
 ﻿@using FootballLeagueFinder.ViewModels
-@model CreateTeamVM
+@model EditTeamVM
 
-<h1 class="text-center">Create Team</h1>
-<form method="Post" asp-action="Create" enctype="multipart/form-data">
+<h1 class="text-center">Edit Team</h1>
+<form method="Post" asp-action="Edit" enctype="multipart/form-data">
+    <input type="hidden" value="LeagueId" id="LeagueId" />
   <div class="form-group">
     <label asp-for="Name">Banana</label>
     <input asp-for="Name" class="form-control"  placeholder="Name">

@@ -6,6 +6,7 @@ namespace FootballLeagueFinder.Contracts
     {
         Task<IEnumerable<Team>> GetAllAsync();
         Task<Team> GetByIdAsync(int id);
+        Task<Team> GetByIdAsyncNoTracking(int id);
         Task<IEnumerable<Team>> GetTeamByLeague(string league);
         bool Add(Team team);
         bool Update(Team team);

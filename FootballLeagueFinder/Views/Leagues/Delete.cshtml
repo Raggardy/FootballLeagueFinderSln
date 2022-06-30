@@ -1,7 +1,7 @@
-﻿@using FootballLeagueFinder.ViewModels
-@model CreateLeagueVM
+﻿@using FootballLeagueFinder.Models
+@model League
 
-<form method="Post" asp-action="Create" enctype="multipart/form-data">
+<form method="Post" asp-action="Delete" enctype="multipart/form-data">
     <div class="form-group">
     <label asp-for="Name">Name</label>
     <input asp-for="Name" class="form-control" placeholder="Name">
@@ -24,7 +24,12 @@
     <label asp-for="Photo">Photo</label>
     <input asp-for="Photo" type="file" class="form-control" placeholder="Photo">
     <span asp-validation-for="Photo" class="text-danger"></span>
-  </div>
-
-   <button type="submit" class="btn btn-primary">Submit</button>
+  </div>   
 </form>
+<div class="form-group">
+          <form action="Delete" method="post">
+              <input type="hidden" asp-for="Id"/>
+              <input type="submit" value="Confirm" class="btn btn-lg btn-danger mt-3 "/>
+          </form>
+      </div>
+

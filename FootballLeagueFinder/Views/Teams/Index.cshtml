@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Team>
 <h1>Teams Index</h1>
-
+      
       <div class="album py-3 bg-light">
         <div class="container">
-
           <div class="row">
+
             
             @foreach(var item in Model)
             {
@@ -17,11 +17,13 @@
                   <h5 class="card-text">Manager: @item.Manager</h5>
                   
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">Muted text</small>
+                    
+                       <a type="btn btn-success" asp-controller="Teams" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-lg btn-outline-info">View</a>
+                      <a type="btn btn-success" asp-controller="Teams" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-lg btn-outline-success">Edit</a>
+                       <a type="btn btn-success" asp-controller="Teams" asp-action="Create" asp-route-id="@item.Id" class="btn btn-lg btn-outline-secondary">Create</a>
+                      <a type="btn btn-success" asp-controller="Teams" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-lg btn-outline-danger">Delete</a>
+                    
+                    
                   </div>
                 </div>
               </div>

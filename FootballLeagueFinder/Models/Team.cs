@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FootballLeagueFinder.Models
 {
@@ -15,5 +16,6 @@ namespace FootballLeagueFinder.Models
         public League League { get; set; }
 
         public List<Player> Players { get; set; }
+        
     }
 }

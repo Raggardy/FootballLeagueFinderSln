@@ -1,6 +1,8 @@
+using FootballLeagueFinder.Configurations;
 using FootballLeagueFinder.Contracts;
 using FootballLeagueFinder.Data;
 using FootballLeagueFinder.Repository;
+using FootballLeagueFinder.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ILeagueRepository, LeagueRepository>();
 builder.Services.AddScoped<ITeamRepository, TeamRepository>();
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.Configure<CloudinaryConfig>(builder.Configuration.GetSection("CloudinarySettings"));
 
 builder.Services.AddDbContext<FootballDbContext>(options =>
 {

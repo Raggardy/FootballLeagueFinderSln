@@ -1,8 +1,10 @@
-﻿@using FootballLeagueFinder.ViewModels
-@model CreateTeamVM
+﻿@using FootballLeagueFinder
+@model Team
 
-<h1 class="text-center">Create Team</h1>
-<form method="Post" asp-action="Create" enctype="multipart/form-data">
+
+<h1 class="text-center">Are you sure you want to delete this team?</h1>
+<form method="Post" asp-action="Delete" enctype="multipart/form-data">
+    <input type="hidden" value="LeagueId" id="LeagueId" />
   <div class="form-group">
     <label asp-for="Name">Banana</label>
     <input asp-for="Name" class="form-control"  placeholder="Name">
@@ -29,13 +31,21 @@
 
   <div class="form-group">
     <label asp-for="LeagueId">League id</label>
-    <input asp-for="LeagueId" class="form-control" placeholder="League id">
-    
+    <input asp-for="LeagueId" class="form-control" placeholder="League id">    
     <span asp-validation-for="LeagueId" class="text-danger"></span>
   </div>
 
- 
+  </form>
+  
+      <div class="form-group">
+          <form action="Delete" method="post">
+              <input type="hidden" asp-for="Id"/>
+              <input type="submit" value="Confirm" class="btn btn-lg btn-danger mt-3 "/>
+          </form>
+      </div>
+  
+
   
  
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+  
+

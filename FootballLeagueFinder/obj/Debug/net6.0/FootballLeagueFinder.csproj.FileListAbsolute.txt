@@ -59,3 +59,5 @@ C:\Users\dp161\Desktop\FootballLeageFinderProject\FootballLeagueFinderSln\Footba
 C:\Users\dp161\Desktop\FootballLeageFinderProject\FootballLeagueFinderSln\FootballLeagueFinder\obj\Debug\net6.0\FootballLeagueFinder.pdb
 C:\Users\dp161\Desktop\FootballLeageFinderProject\FootballLeagueFinderSln\FootballLeagueFinder\obj\Debug\net6.0\FootballLeagueFinder.genruntimeconfig.cache
 C:\Users\dp161\Desktop\FootballLeageFinderProject\FootballLeagueFinderSln\FootballLeagueFinder\obj\Debug\net6.0\ref\FootballLeagueFinder.dll
+C:\Users\dp161\Desktop\FootballLeageFinderProject\FootballLeagueFinderSln\FootballLeagueFinder\bin\Debug\net6.0\CloudinaryDotNet.dll
+C:\Users\dp161\Desktop\FootballLeageFinderProject\FootballLeagueFinderSln\FootballLeagueFinder\bin\Debug\net6.0\Newtonsoft.Json.dll

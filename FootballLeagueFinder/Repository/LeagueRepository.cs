@@ -37,6 +37,14 @@ namespace FootballLeagueFinder.Repository
                 .FirstOrDefaultAsync(x => x.Id == id);
         }
 
+        public async Task<League> GetByIdAsyncNoTracking(int id)
+        {
+            return await _context.Leagues
+                .Include(t => t.Teams)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Id == id);
+        }
+
         public bool Save()
         {
             var saved = _context.SaveChanges();
